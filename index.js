@@ -1,5 +1,13 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const stringArray = word.split("");
+  const stringArrayRev = stringArray.slice().reverse()
+  if(stringArrayRev.join("") === stringArray.join("")) {
+    console.log("is a Palindrome")
+    return true
+  } else
+  console.log("is not a Palindrome")
+  return false
 }
 
 /* 
